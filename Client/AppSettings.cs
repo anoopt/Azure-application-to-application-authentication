@@ -9,3 +9,23 @@ namespace CC.Functions {
         public bool ClearTokenCache { get; set; }
     }
 }
+
+//* Sample local.settings.json
+
+/*
+
+{
+  "IsEncrypted": false,
+  "Values": {
+    "FUNCTIONS_WORKER_RUNTIME": "dotnet",
+    "AppSettings:ServerAppId": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
+    "AppSettings:ClientAppId": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
+    "AppSettings:ClientAppSecret": "**********************************",
+    "AppSettings:TenantId": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
+    "AppSettings:ClearTokenCache": "false",
+    "AppSettings:ServerAppGetOrdersUrl": "https://yourappname.azurewebsites.net/api/GetOrders?code=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
+    "AzureWebJobsStorage": "UseDevelopmentStorage=true"
+  }
+}
+
+*/

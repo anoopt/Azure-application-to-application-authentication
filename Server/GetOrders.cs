@@ -22,12 +22,10 @@ namespace CC.Functions
 
             log.LogInformation("GetOrders function processed a request");
 
-            log.LogInformation(req.Headers["X-MS-TOKEN-AAD-ACCESS-TOKEN"]);
-
-            foreach (Claim claim in principal.Claims)
+            /* foreach (Claim claim in principal.Claims)
             {
                 log.LogInformation($"{claim.Type} - {claim.Value}");
-            }
+            } */
 
             req.HttpContext.ValidateAppRole(new string[] { "Orders.Read" });
 
